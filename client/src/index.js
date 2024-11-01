@@ -1,10 +1,8 @@
 import ReactDOM from 'react-dom';
-
-//page
-import MainPage from "./components/pages/MainPage/MainPage.js";
+import App from './components/App';
 
 ReactDOM.render(
-    <MainPage />
+    <App />
     , document.getElementById('root')
 );
 
