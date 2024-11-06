@@ -1,0 +1,44 @@
+@use 'root.scss' as *;
+@use 'mixin.scss' as *;
+
+/* ## font start ## */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Regular.woff') format('woff'),
+  url('../fonts/Pretendard-Regular.woff2') format('woff2');
+  font-weight: $font-normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../fonts/Pretendard-Bold.woff') format('woff'),
+  url('../fonts/Pretendard-Bold.woff2') format('woff2');
+  font-weight: $font-bold;
+}
+
+
+@mixin default-font {
+  color: $text-default;
+  letter-spacing: -0.5px;
+  font-family: "Pretendard", sans-serif;
+  font-size: 13px;
+}
+
+html, body {
+  @include default-font;
+  word-break: break-all;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+ display: none;
+}
+
+pre {
+  font-family: "Pretendard", sans-serif;
+  line-height: 1.6;
+}
+
+/* ## font end ## */

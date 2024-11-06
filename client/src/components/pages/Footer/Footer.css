@@ -1,0 +1,73 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(34, 34, 34, 0.1);
+}
+.footer .inner-footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.footer .inner-footer li {
+  width: 20%;
+  text-align: center;
+}
+.footer .inner-footer li:nth-child(3) {
+  position: relative;
+}
+.footer .inner-footer li:nth-child(3) .btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #B8B1E1, #4434A2);
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 1;
+}
+.footer .inner-footer li:nth-child(3) .btn::before {
+  display: none;
+}
+.footer .inner-footer li:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 32px;
+  border-radius: 0 0 64px 64px;
+  background: #fff;
+  z-index: 1;
+  top: -30px;
+}
+.footer .inner-footer li .btn {
+  background: url("../../../assets/images/ico-footer.svg") 0 0 no-repeat;
+  background-size: auto 25px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  padding-top: 28px;
+  opacity: 0.6;
+}
+.footer .inner-footer li .btn.ico0 {
+  background-position-x: 0px;
+}
+.footer .inner-footer li .btn.ico1 {
+  background-position-x: -25px;
+}
+.footer .inner-footer li .btn.ico2 {
+  background-position-x: -50px;
+}
+.footer .inner-footer li .btn::before {
+  position: absolute;
+  content: attr(data-menu);
+  font-size: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,31 @@
+//position
+@mixin pos-center {
+  left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+@mixin pos-x-center {
+  left: 50%; transform: translateX(-50%);
+}
+@mixin pos-y-center {
+  top: 50%; transform: translateY(-50%);
+}
+
+//말 줄임 - 2줄 처리
+@mixin dot-vertical-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+//말 줄임 - 1줄 처리
+@mixin dot-dot-dot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 공통 아이콘
+@mixin ico-footer {
+  background: url('../../../assets/images/ico-footer.svg') 0 0 no-repeat;
+}
